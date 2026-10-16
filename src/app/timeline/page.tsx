@@ -4,22 +4,22 @@ import PageIntro from "@/components/layout/page-intro";
 
 const milestones = [
   {
-    date: "To be announced",
+    date: "12 October 2026",
     title: "Registration",
     description: "Applications are submitted and reviewed by the organizing team.",
-    status: "Schedule pending",
+    status: "Open",
   },
   {
-    date: "To be announced",
+    date: "12 October 2026",
     title: "Orientation",
     description: "Participants receive an introduction to the event and its participation process.",
-    status: "Schedule pending",
+    status: "Completed",
   },
   {
-    date: "To be announced",
+    date: "16 November 2026",
     title: "Learning workshops",
     description: "Planned sessions help participants explore relevant tools and project skills.",
-    status: "Schedule pending",
+    status: "Schedule Announced",
   },
   {
     date: "To be announced",
