@@ -1,9 +1,20 @@
+/** @jsxRuntime classic */
+/** @jsx React.createElement */
+import * as React from "react";
 import PublicPage from "@/components/layout/public-page";
 import PageIntro from "@/components/layout/page-intro";
 import GlassCard from "@/components/ui/glass-card";
 import InquiryForm from "@/components/forms/inquiry-forms";
 import { sponsorTiers } from "@/lib/site";
 import { sponsors } from "@/lib/sponsordata";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elementName: string]: any;
+    }
+  }
+}
 
 export default function SponsorsPage() {
   return (
@@ -20,29 +31,33 @@ export default function SponsorsPage() {
 
           <div className="page-grid">
             {sponsors.map((sponsor) => (
-              <GlassCard className="page-card" key={sponsor.name}>
-                {sponsor.image && (
-                  <img
-                    src={sponsor.image}
-                    alt={sponsor.name}
-                    style={{
-                      maxWidth: "100%",
-                      height: 80,
-                      objectFit: "contain",
-                      display: "block",
-                      margin: "0 auto 12px",
-                    }}
-                  />
-                )}
+              <div key={sponsor.name}>
+                <GlassCard className="page-card">
+                  {sponsor.image && (
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      width={320}
+                      height={80}
+                      style={{
+                        maxWidth: "100%",
+                        height: 80,
+                        objectFit: "contain",
+                        display: "block",
+                        margin: "0 auto 12px",
+                      }}
+                    />
+                  )}
 
-                <h4 style={{ textAlign: "center", marginBottom: 6 }}>
-                  {sponsor.name}
-                </h4>
+                  <h4 style={{ textAlign: "center", marginBottom: 6 }}>
+                    {sponsor.name}
+                  </h4>
 
-                {sponsor.type && (
-                  <p style={{ textAlign: "center", margin: 0 }}>{sponsor.type}</p>
-                )}
-              </GlassCard>
+                  {sponsor.type && (
+                    <p style={{ textAlign: "center", margin: 0 }}>{sponsor.type}</p>
+                  )}
+                </GlassCard>
+              </div>
             ))}
           </div>
         </div>
@@ -52,11 +67,13 @@ export default function SponsorsPage() {
         <div className="container">
           <div className="page-grid">
             {sponsorTiers.map((tier) => (
-              <GlassCard className="page-card" key={tier.tier}>
-                <span className="tier-label">{tier.tier}</span>
-                <h3>{tier.title}</h3>
-                <p>{tier.description}</p>
-              </GlassCard>
+              <div key={tier.tier}>
+                <GlassCard className="page-card">
+                  <span className="tier-label">{tier.tier}</span>
+                  <h3>{tier.title}</h3>
+                  <p>{tier.description}</p>
+                </GlassCard>
+              </div>
             ))}
           </div>
 
