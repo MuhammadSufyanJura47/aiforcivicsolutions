@@ -3,7 +3,7 @@ import PageIntro from "@/components/layout/page-intro";
 import GlassCard from "@/components/ui/glass-card";
 import InquiryForm from "@/components/forms/inquiry-forms";
 import { sponsorTiers } from "@/lib/site";
-import { sponsors } from "@/data/sponsordata";
+import { sponsors } from "@/lib/sponsordata";
 
 export default function SponsorsPage() {
   return (
