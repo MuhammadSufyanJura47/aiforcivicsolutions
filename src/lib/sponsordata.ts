@@ -6,7 +6,7 @@ export type Sponsor = {
 
 export const sponsors: Sponsor[] = [
   {
-    image: "/public/images/youthlink.png",
+    image: "youthlink.png",
     name: "Youth Link Community",
     type: "Community Partner",
   },
