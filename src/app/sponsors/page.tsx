@@ -1,6 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx React.createElement */
-import * as React from "react";
 import PublicPage from "@/components/layout/public-page";
 import PageIntro from "@/components/layout/page-intro";
 import GlassCard from "@/components/ui/glass-card";
