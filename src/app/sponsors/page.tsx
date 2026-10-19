@@ -14,7 +14,6 @@ export default function SponsorsPage() {
         description="Connect your organization with an initiative exploring AI, software development, and solutions for community challenges."
       />
 
-      {/* Sponsors cards section (below the hero). Add sponsor objects in src/data/sponsordata.ts and place images under /public */}
       <section className="page-sponsors">
         <div className="container">
           <h2 style={{ textAlign: "center", marginBottom: 24 }}>Our Sponsors</h2>
@@ -36,8 +35,13 @@ export default function SponsorsPage() {
                   />
                 )}
 
-                <h4 style={{ textAlign: "center", marginBottom: 6 }}>{sponsor.name}</h4>
-                {sponsor.type && <p style={{ textAlign: "center" }}>{sponsor.type}</p>}
+                <h4 style={{ textAlign: "center", marginBottom: 6 }}>
+                  {sponsor.name}
+                </h4>
+
+                {sponsor.type && (
+                  <p style={{ textAlign: "center", margin: 0 }}>{sponsor.type}</p>
+                )}
               </GlassCard>
             ))}
           </div>
