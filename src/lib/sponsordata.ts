@@ -10,4 +10,9 @@ export const sponsors: Sponsor[] = [
     name: "Youth Link Community",
     type: "Community Partner",
   },
+  {
+    image: "/sponsors/awssbgnumlrwp.png",
+    name: "AWS SBG NUML RWP",
+    type: "Community Partner",
+  },
 ];
