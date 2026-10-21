@@ -15,4 +15,9 @@ export const sponsors: Sponsor[] = [
     name: "AWS SBG NUML RWP",
     type: "Community Partner",
   },
+  {
+    image: "/sponsors/awssbgnumlict.png",
+    name: "AWS SBG NUML ISB",
+    type: "Community Partner",
+  },
 ];
