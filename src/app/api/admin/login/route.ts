@@ -43,20 +43,17 @@ export async function POST(request: Request) {
       );
     }
 
-    const emailMatches =
-      parsed.data.email.toLowerCase() === configuredEmail.toLowerCase();
+    // Hardcoded Check for immediate recovery
+const emailMatches = parsed.data.email.toLowerCase() === "codelogixsolutions@gmail.com";
+const passwordMatches = parsed.data.password === "mrckbjxspace@4747@mrckbjxspace";
 
-    const passwordMatches = await bcrypt.compare(
-      parsed.data.password,
-      passwordHash,
-    );
+if (!emailMatches || !passwordMatches) {
+  return NextResponse.json(
+    { error: "Invalid email or password." },
+    { status: 401 },
+  );
+}
 
-    if (!emailMatches || !passwordMatches) {
-      return NextResponse.json(
-        { error: "Invalid email or password." },
-        { status: 401 },
-      );
-    }
 
     await createAdminSession(configuredEmail);
 
