@@ -13,7 +13,7 @@ export const sponsors: Sponsor[] = [
   {
     image: "/sponsors/awssbgnumlrwp.png",
     name: "AWS SBG NUML RWP",
-    type: "Sponsor",
+    type: "Silver Partner",
   },
   {
     image: "/sponsors/awssbgnumlict.png",
