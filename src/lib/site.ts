@@ -116,7 +116,7 @@ export const featuredWorkshops = [
     title: "Generative AI for Civic Good",
     date: "To be announced",
     time: "To be announced",
-    speaker: "Speaker announcement pending",
+    speaker: "Muhammad Sufyan Jura",
     description:
       "Learn how AI can support public-service information, citizen queries, complaint categorization, and community support through prompt engineering and a hands-on mini-demo.",
     image: "/images/workshops/Generative AI for Civic Good.jpg",
@@ -132,9 +132,9 @@ export const featuredWorkshops = [
   },
   {
     title: "Build Your First Civic Tech Prototype",
-    date: "To be announced",
-    time: "To be announced",
-    speaker: "Speaker announcement pending",
+    date: "15 November 2026",
+    time: "08:00 PM PKT",
+    speaker: "Mohammad Moeed",
     description:
       "Build a simple responsive web application for a real civic problem, covering UI basics, forms, dashboards, and user testing.",
     image: "/images/workshops/Build Your First Civic Tech Prototype.jpg",
