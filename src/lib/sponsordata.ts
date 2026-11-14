@@ -25,4 +25,9 @@ export const sponsors: Sponsor[] = [
     name: "AWS SBG University of Layyah",
     type: "Community Partner",
   },
+  {
+    image: "/sponsors/datacampdonate.png",
+    name: "DataCamp Donates",
+    type: "Gold Partner",
+  },
 ];
