@@ -57,8 +57,8 @@ hero/technology-with-purpose.jpg
 workshops/generative-ai-civic-innovation.jpg
 workshops/web-development-ai-projects.jpg
 workshops/pitching-project-presentation.jpg
-speakers/speaker-01.jpg
-speakers/speaker-02.jpg
+speakers/speaker1.png
+speakers/speaker2.png
 speakers/speaker-03.jpg
 speakers/speaker-04.jpg
 ```
